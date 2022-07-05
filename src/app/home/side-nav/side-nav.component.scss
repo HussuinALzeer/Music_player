@@ -1,0 +1,161 @@
+.side-nav{
+   height: 100vh;
+   width: 0px;
+   position: fixed;
+   top: 0;
+   right: 0;
+   background: black;
+   color: white;
+   transition: 0.3s;
+   z-index:9;
+   
+   &.active{
+      width: 400px;
+
+   }
+
+
+   .close-btn{
+      display: flex;
+      height: 100px;
+      justify-content: space-between;
+
+      .logo{
+
+         font-size: 3em;
+         font-weight: 700;
+         list-style: 3ps;
+         padding-left: 15px;
+         padding-top: 15px;
+      }
+
+      .close{
+       position: relative;
+       height: 50px;
+       width:50px;
+       background: blue;  
+       cursor: pointer;
+
+
+         .line1{
+            position: absolute;
+            top: 48%;
+            left: 14%;
+            transform: translate(-50%, -50%);
+            height: 4px;
+            width: 36px;
+            background: white;
+            transform: rotate(48deg);
+         }
+
+         .line2{
+            position: absolute;
+            top: 45%;
+            left: 18%;
+            transform: translate(-50%, -50%);
+            height: 4px;
+            width: 36px;
+            background: white;
+            transform: rotate(133deg);
+        }
+        
+        
+      }
+   }
+
+   .side-nav_links{
+      ul {
+         margin-top: 30px;
+
+         li{
+
+            font-size: 1.45em;
+            font-weight: 600;
+            text-transform: uppercase;
+            list-style: 2px;
+            line-height: 45px;
+         }
+      }
+   }
+
+   .side-nav_soc{
+      ul{
+         display: flex;
+      flex-direction: row;
+         li{
+
+            padding-right: 22px;
+            font-size: 1.5em;
+         }
+      }
+   }
+
+
+   .sgin{
+
+      .btn1{
+         padding: 10px 30px;
+         outline: none;
+         border: white solid 1px;
+         background: none;
+         color: white;
+         text-transform: uppercase;
+         margin-left: 33px;
+         position: relative;
+         transition: .3s;
+         z-index: 2;
+         &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            background: white;
+            transition: .3s ease-in-out;
+         }
+
+         &:hover::before{
+            height: 100%;
+         }
+
+         &:hover{
+            color: black;
+         }
+      }
+
+      .btn2{
+         padding: 10px 30px;
+         outline: none;
+         border: white solid 1px;
+         background: none;
+         color: white;
+         text-transform: uppercase;
+         margin-left: 33px;
+         position: relative;
+         transition: .3s;
+         z-index: 2;
+         &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            background: white;
+            transition: .3s ease-in-out;
+         }
+
+         &:hover::before{
+            height: 100%;
+         }
+
+         &:hover{
+            color: black;
+         }
+      }
+   }
+
+}
